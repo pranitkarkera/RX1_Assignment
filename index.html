@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List Management App</title>
+  </head>
+  <body>
+    <!-- Section to add tasks -->
+    <section>
+      <h3>Add Task</h3>
+      <form id="addTaskForm">
+        <input type="text" id="taskName" placeholder="Task" required/> <!-- Task Name -->
+        <input type="text" id="taskDetail" placeholder="Task Detail" required/> <!-- Task Details -->
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+    <br/>
+    
+    <!-- Section to remove tasks -->
+    <section>
+      <h3>Remove Task</h3>
+      <input type="number" id="removeTaskId" placeholder="ID" required/> <!-- ID for task removal -->
+      <button id="removeTaskBtn">Remove Task</button>
+    </section>
+    
+    <!-- Section to display the task list -->
+    <section>
+      <ul id="tasksList"></ul> <!-- List of tasks will go here -->
+      <p>Total Tasks: <span id="totalTasks">0</span></p> <!-- Total tasks counter -->
+    </section>
+
+    <!-- Link to your main JavaScript file -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
